@@ -10,6 +10,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,6 +27,17 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+      <div class="container">
+        <div class="col-sm-6 col-md-4">
+          <hr>
+          現在の残高は
+          <h2 id="balance">0 NT</h2>
+          <hr>
+          <input type="text" class="form-control" id="address" placeholder="Address" />
+          <input type="text" class="form-control" id="amount" placeholder="Amount" />
+          <button class="btn btn-primary" id="transferButton" type="button">Transfer</button>
+        </div>
+      </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

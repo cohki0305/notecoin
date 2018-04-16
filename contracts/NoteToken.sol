@@ -7,7 +7,7 @@ contract NoteToken is StandardToken {
   string public symbol         = 'NT';
   uint8  public demicals       = 2;
   uint   public INITIAL_SUPPLY = 12000;
-
+  
   function NoteToken() public {
     totalSupply_ = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
